@@ -2,7 +2,7 @@ class ReviewsController < ApplicationController
 	before_action :set_book
 
 	def index
-		@revies = @book.reviews.order('created_at desc')
+		@reviews = @book.reviews.order('created_at desc')
 	end
 
 private
